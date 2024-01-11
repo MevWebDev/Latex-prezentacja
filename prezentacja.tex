@@ -1,0 +1,103 @@
+\documentclass{beamer}
+\usepackage[T1]{fontenc}
+\usetheme{Frankfurt}
+\title{Latex prezentacja}
+\author{Szymon Grysiewicz}
+\institute{UG}
+\date{2023}
+\usepackage{enumitem}
+
+\usepackage[hang,flushmargin]{footmisc}
+\renewcommand*{\footnotelayout}{\tiny}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Ranking knajp}
+W tej prezentacji postaram się przedstawić definitywny ranking knajp
+\end{frame}
+
+\begin{frame}
+\frametitle{Tabela}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{Rank} & \textbf{Restaurant} \\
+            \hline
+            1 & Wloska Knajpa\\
+            2 & Amerykanska Knajpa \\
+            3 & Studencka Knajpa \\
+            4 & Podwodna Knajpa \\
+            5 & Czarna Knajpa \\
+            \hline
+        \end{tabular}
+        \caption{Najlepsze Knajpy}
+    \end{table}
+    \footnote{\cite{tabela}}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Lista Punktowana, Dalem tu bo nie mam gdzie indziej wstawic}
+    \begin{itemize}
+        \item Pierwszy punkt
+        \item Drugi punkt
+        \item Trzeci punkt
+    \end{itemize}
+    \end{frame}
+
+
+\begin{frame}
+    \frametitle{Miejsce 5}
+        \begin{figure}
+            \includegraphics[width=0.7\textwidth]{pepe.jpg}
+            \caption{Włoska Knajpa}
+        \end{figure}
+        \footnote{\cite{knajpa1}}
+\end{frame}
+    
+
+\begin{frame}
+\frametitle{Miejsce 4}
+    \begin{figure}
+        \includegraphics[width=0.7\textwidth]{mc.png}
+        \caption{Amerykanska Knajpa}
+    \end{figure}
+    \footnote{\cite{knajpa2}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Miejsce 3}
+    \begin{figure}
+        \includegraphics[width=0.5\textwidth]{ug.png}
+        \caption{Studencka Knajpa}
+    \end{figure}
+    \footnote{\cite{knajpa3}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Miejsce 2}
+    \begin{figure}
+        \includegraphics[width=0.7\textwidth]{krab.jpeg}
+        \caption{Podwodna Knajpa}
+    \end{figure}
+    \footnote{\cite{knajpa4}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Miejsce 1}
+    \begin{figure}
+        \includegraphics[width=0.7\textwidth]{kfc.png}
+        \caption{Czarna Knajpa}
+    \end{figure}
+    \footnote{\cite{knajpa5}}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Bibliografia}
+    \bibliographystyle{apalike}
+    \bibliography{biblio.bib}
+\end{frame}
+
+\end{document}
